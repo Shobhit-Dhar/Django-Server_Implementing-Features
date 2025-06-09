@@ -12,6 +12,24 @@ This project is a Django application that provides two AI-powered features:
 *   **Efficient**: AI models are loaded into memory only once at server startup to ensure fast API responses.
 *   **State-of-the-Art Models**: Uses `whisperX` for accurate transcription/diarization and a Hugging Face T5 model for title generation.
 
+## Structure Followed
+```bash
+ai_features_project/
+├── ai_features_project/
+│   ├── settings.py
+│   └── urls.py
+├── core/
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── title_generator.py
+│   │   └── transcription.py
+│   ├── urls.py
+│   └── views.py
+├── manage.py
+├── requirements.txt
+└── README.md
+```
+
 ## Setup and Installation
 
 ### Prerequisites
