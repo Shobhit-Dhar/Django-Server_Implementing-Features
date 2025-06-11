@@ -1,8 +1,7 @@
-
-from django.contrib import admin
-from django.urls import path,include
+from django.urls import path
+from .views import AudioTranscriptionView, TitleSuggestionView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('core.urls')),
+    path('transcribe/', AudioTranscriptionView.as_view(), name='audio-transcription'),
+    path('suggest-title/', TitleSuggestionView.as_view(), name='title-suggestion'),
 ]
