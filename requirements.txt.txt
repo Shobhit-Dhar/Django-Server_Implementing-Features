@@ -1,0 +1,18 @@
+# Core Django Framework
+django
+djangorestframework
+
+# For AI/ML tasks (PyTorch)
+torch
+torchaudio
+
+# Feature 1: Audio Transcription with Diarization
+# Installs directly from the GitHub repository for the latest version
+whisperx @ git+https://github.com/m-bain/whisperX.git
+
+# Feature 2: AI Title Suggestions
+# Includes the 'sentencepiece' extra needed for T5 models
+transformers[sentencepiece]
+
+# For Hugging Face authentication (provides the 'huggingface-cli' command)
+huggingface_hub
